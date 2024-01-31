@@ -23,13 +23,12 @@ const config: HardhatUserConfig = {
       url: 'https://rpc.ankr.com/berachain_testnet',
       accounts: [process.env.WALLET_KEY as string],
       chainId: 80085,
-      gas: "auto",
-      gasPrice: 100,
+      // gas: "auto",
+      gasPrice: 1000000000,
     },
     // for local dev environment
     'berachain-local': {
       url: 'http://localhost:8545',
-      accounts: [process.env.WALLET_KEY as string],
       gasPrice: 1000000000,
     },
   },
