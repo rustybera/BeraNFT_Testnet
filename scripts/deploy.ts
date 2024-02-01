@@ -4,7 +4,7 @@ import { ethers } from 'hardhat';
 async function main() {
   const signer = (await ethers.getSigners())[0];
   console.log("chain id: ", await ethers.provider.getNetwork().then(network => network.chainId));
-  console.log("deloyer address: ", signer.address);
+  console.log("deployer address: ", signer.address);
 
   // let Hardhat deploy the contract
   // const nft = await ethers.deployContract('NFT');

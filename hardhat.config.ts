@@ -24,7 +24,7 @@ const config: HardhatUserConfig = {
       accounts: [process.env.WALLET_KEY as string],
       chainId: 80085,
       // gas: "auto",
-      gasPrice: 1000000000,
+      gasPrice: 10000000000,
     },
     // for local dev environment
     'berachain-local': {
